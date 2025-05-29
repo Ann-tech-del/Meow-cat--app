@@ -1,4 +1,9 @@
 import axios from 'axios';
+// vite.config.js
+export default {
+  base: '/Meow-cat--app /'
+}
+
 
 let photoInput = document.querySelector("#form-name-input-2");
 let factInput = document.querySelector("#form-name-input");
