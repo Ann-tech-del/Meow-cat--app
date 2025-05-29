@@ -3,10 +3,9 @@
 
 let photoInput = document.querySelector("#form-name-input-2");
 let factInput = document.querySelector("#form-name-input");
-const imgBtn = document.querySelectorAll(".search-btn")[1];
-const factBtn = document.querySelectorAll(".search-btn")[0];
+const imgBtn = document.querySelector("#searchBtn2");
+const factBtn = document.querySelector("#searchBtn1");
 const result = document.querySelector(".result");
-
 
 async function getCatPhotos() {
   result.innerHTML = "";
@@ -35,7 +34,6 @@ async function getCatPhotos() {
   }
 }
 
-
 async function getCatFacts() {
   result.innerHTML = "";
 
@@ -60,7 +58,6 @@ async function getCatFacts() {
     result.textContent = "Failed to load cat facts.";
   }
 }
-
 
 imgBtn.addEventListener("click", function (e) {
   e.preventDefault();
