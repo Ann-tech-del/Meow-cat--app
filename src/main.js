@@ -18,7 +18,7 @@ async function getCatPhotos() {
     const response = await axios.get(`https://api.thecatapi.com/v1/images/search?limit=${numOfPhotos}`);
     const data = response.data;
 
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < numOfPhotos; i++) {
       const div = document.createElement("div");
       div.classList.add("image-results");
       div.style.backgroundImage = `url(${data[i].url})`;
